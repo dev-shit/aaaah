@@ -1,7 +1,5 @@
 <script lang="ts">
   import Marquee from "svelte-fast-marquee";
-  import ArrowDown from "~icons/lucide/arrow-down";
-  import { getProjects } from "../api/github";
 
   function handleBlobMovement({ clientX, clientY }: MouseEvent) {
     const blob = document.querySelector(".blob");
@@ -26,67 +24,9 @@
 <section id="hero" on:pointermove={handleBlobMovement} class="hero">
   <span class="blob" />
   <span class="blob-blur" />
-  <div class="text">
-    <Marquee speed={20} direction="right">
-      <h1 class="name">{name}</h1>
-      <h1 class="name">{name}</h1>
-      <h1 class="name">{name}</h1>
-      <h1 class="name">{name}</h1>
-      <h1 class="name">{name}</h1>
-      <h1 class="name">{name}</h1>
-    </Marquee>
-    <Marquee speed={15} direction="left">
-      <h1 class="role">
-        {functiondescription}
-      </h1>
-      <h1 class="role">
-        {functiondescription}
-      </h1>
-      <h1 class="role">
-        {functiondescription}
-      </h1>
-      <h1 class="role">
-        {functiondescription}
-      </h1>
-      <h1 class="role">
-        {functiondescription}
-      </h1>
-      <h1 class="role">
-        {functiondescription}
-      </h1>
-      <h1 class="role">
-        {functiondescription}
-      </h1>
-    </Marquee>
-  </div>
 </section>
 
 <style lang="scss">
-  .text {
-    margin-bottom: 20px;
-    gap: 1vw;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .role {
-    color: var(--hero-secondary);
-    font-size: clamp(25px, 3vw, 50px);
-    margin: 0 20px;
-    font-weight: 450;
-    font-family: "corben", sans-serif;
-  }
-
-  .name {
-    color: var(--hero-secondary);
-    font-size: clamp(35px, 6vw, 70px);
-    margin: 0 clamp(1px, 3vw, 30px);
-    font-weight: 800;
-    font-family: "unbounded", sans-serif;
-    font-style: wide;
-    position: relative;
-  }
-
   .hero * {
     z-index: 4;
   }
@@ -161,9 +101,9 @@
     bottom: 0;
     transform-origin: center;
     transform: translate(-50%, -50%);
-    background: radial-gradient(circle at 50% 0, #3d462f80, #ff000000 70.71%),
-      radial-gradient(circle at 6.7% 75%, #2b353080, #0000ff00 70.71%),
-      radial-gradient(circle at 93.3% 75%, #50573180, #00ff0000 70.71%)
+    background: radial-gradient(circle at 50% 0, #0e1116, #ff000000 70.71%),
+      radial-gradient(circle at 6.7% 75%, #0e1116, #0000ff00 70.71%),
+      radial-gradient(circle at 93.3% 75%, #0e1116, #00ff0000 70.71%)
         rgb(5, 5, 5);
     background-size: 200% 200%;
     animation: rotateGradient 120s linear infinite;
