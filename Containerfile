@@ -9,7 +9,7 @@ COPY . /root/
 
 RUN yarn
 
-RUN build
+RUN yarn build
 
 FROM nginx
 
