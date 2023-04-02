@@ -15,8 +15,8 @@
     );
   }
 
-  const functiondescription = "Creative Developer";
-  const name = "Jacco Groen";
+  const functiondescription = "";
+  const name = "";
 
   const repeatWord: number = 5;
 </script>
@@ -175,12 +175,11 @@
     position: relative;
     background-color: black;
     color: var(--hero-white);
-    height: calc(40vh + 20vw);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     font-family: "agrandir-grand", sans-serif;
     overflow: hidden;
   }
-
 </style>
